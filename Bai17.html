@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 17 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            // Constructor
+            var w = "123";
+            var x = new Number(w);
+            var s = new String(125632);
+
+            var person = {
+                firstName: "Tran",
+                lastName: "Minh",
+                age: 22,
+                fullName: function(){
+                    return this.firstName + ' ' + this.lastName;
+                }
+            }
+
+            function Person(first,last,age,addr){
+                this.firstName = first;
+                this.lastName = last;
+                this.age = age;
+                this.address = addr;
+                this.fullName = function(){
+                    return this.firstName + ' ' + this.lastName;
+                }
+                this.smile = function(){
+                    return "Hahaha!!!";
+                }
+            }
+
+            var p1 = new Person("Hoang","Nguyen",20);
+            var p2 = new Person("Hung","Tran",21);
+
+            p1.address = "HaNoi";
+
+            p1.eat = function(){
+                return "Soap   soap  soap...."
+            }
+
+            document.getElementById("demo").innerHTML = p1.fullName() + "<br>" + p2.fullName();
+        </script>
+    </body>
+</html>

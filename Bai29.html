@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 29 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            var friends = ["Hoang", "Dong", "Nhung", "Hoa", "Trung", "Khoa"];
+
+            var numbers = [18, 12, -99, 43, 11, 89, 400, 9, 5, 27, 64, 100];
+
+            var txtFriends = "";
+            var txtNumbers = "";
+            
+            for(var i = 0; i < numbers.length; i++){
+                txtFriends += numbers[i] + ", index = " + i + "<br>";
+                if(numbers[i] == 400){
+                    break;
+                }
+            }
+
+            document.getElementById("demo").innerHTML = txtFriends;
+            
+        </script>
+    </body>
+</html>
+
+

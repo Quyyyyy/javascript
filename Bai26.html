@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bai 26 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type ="text/javascript">
+
+            var date = new Date(12,1,2022);
+            var month = date.getMonth();
+            var day = date.getDay();
+            var txtMonth = "";
+            var txtDayOfWeek = "";
+
+            switch (day){
+                case 1:
+                    txtDayOfWeek = "Monday";
+                    break;
+                case 2:
+                    txtDayOfWeek = "Tuesday";
+                    break;
+                case 3:
+                    txtDayOfWeek = "Wednesday";
+                    break;
+                case 4:
+                    txtDayOfWeek = "Thursday";
+                    break;
+                case 5:
+                    txtDayOfWeek = "Firday";
+                    break;
+                case 6:
+                    txtDayOfWeek = "Saturday";
+                    break;
+                case 0:
+                    txtDayOfWeek = "Sunday";
+                    break;
+                default:
+                    txtDayOfWeek = "Not available";
+            }
+
+            document.getElementById("demo").innerHTML = txtDayOfWeek;
+        </script>
+    </body>
+</html>

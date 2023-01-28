@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 19 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            /*
+            0. push(element) : thêm một p.tử vào cuối mảng
+            1. pop() : xóa phần tử ở cuối mảng
+            2. shift() : xóa phần tử đầu mảng
+            3. unshift() : thêm phần tử vào đầu mảng
+            4. splice(index, num, ...) : thêm hoặc xóa num phần tử ở vị trí index
+            5. concat() : nối hai mảng
+            6. slice(start, to) : trích xuất mảng
+            7. join(delim) : nối các phần tử của mảng phân tách bởi delim
+            8. toString() : trả về danh sách các phần tử mảng ở kiểu string
+            */
+            var friends = ["Hoang","Dong","Nhung","Hoa","Trung","Khoa"];
+
+            var cats = ["Meow","Joaha","Tom"];
+            
+            // friends.push("Unfriendly");
+            // friends.unshift("Anh");
+            //friends.pop()
+            //friends.shift()
+            //friends.splice(1,0,"Yen","Hung","Khanh");
+            //var newArr = friends.concat(cats);
+            //var str = friends.join(" + ");
+            var otherFriends = friends.slice(2,4);
+
+            document.getElementById("demo").innerHTML = typeof friends.toString();
+        </script>
+    </body>
+</html>

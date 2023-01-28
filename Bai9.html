@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 9 javascript</title>
+    </head>
+    <body>
+        <h3>JSFunction</h3>
+        <p id="sum"></p>
+        <p id="person"></p>
+        <script type="text/javascript">
+            // Hàm trong JavaScript
+            /*
+              function functionName(parameters list){
+                // function body;
+              }
+              */
+
+              var a = 100;
+              var b = 255;
+
+              var sum = sumOfAAndB(a, b);
+
+              // tổng dãy số từ start -> end
+              function sumOfArray(start, end){
+                var s = 0;
+                for(var i = start; i <= end; i++){
+                    s  += i;
+                }
+                return s; //ket qua
+              }
+
+              function sayHello(message, name){
+                var msg = message + " " + name + "!";
+                return msg;
+              }
+
+              function sumOfAAndB(a, b){
+                var x = a + b;
+                return x;
+              }
+
+              var ms = "Good morning";
+              var ms2 = "Good night";
+              var person = "Nguyen Van A";
+
+              document.getElementById("sum").innerHTML = "Tong tu 1 den 10 = "+ sumOfArray(1, 10);
+              document.getElementById("person").innerHTML = sayHello(ms,person);
+        </script>
+    </body>
+</html>

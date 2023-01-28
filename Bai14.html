@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 14 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            //string method
+            var brands = "Apple Oppo Samsung Xiaomi Huawei Oppo Bphone Oppo";
+
+            //document.getElementById("demo").innerHTML = brands.toUpperCase(); //viet hoa toan bo string
+            //document.getElementById("demo").innerHTML = brands.toLowerCase(); //viet thuong toan bo string
+            //document.getElementById("demo").innerHTML = brands.indexOf("Oppo",15); //tim tu trai sang phải
+            //document.getElementById("demo").innerHTML = brands.lastIndexOf("Oppo"); //tim tu trai sang phải
+            //var arr = brands.split(' ');
+            //document.getElementById("demo").innerHTML = arr + ", typye: " + typeof arr; // tim tu trai sang phai
+            //document.getElementById("demo").innerHTML = brands.length + "<br>" + brands.trim().length; //loai bo khoang
+            // trang dau va cuoi 
+            //document.getElementById("demo").innerHTML = brands.replace(/Oppo/g,"Google") //thay the
+            document.getElementById("demo").innerHTML = brands.replace("Oppo","Google") //thay the
+        </script>
+    </body>
+</html>

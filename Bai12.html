@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 12 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            var person = {
+                firstName: "Tran",
+                lastName: "Minh",
+                age:22,
+                move: function(){
+                    return "Walk step by step";
+                },
+                fullName: function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            // thêm method cho object
+            person.laugh = function(){
+                return "Hahahaha!!!";
+            }
+
+            document.getElementById("demo").innerHTML = "Full name: " + person.fullName() + ", laugh: " + person.laugh(); 
+        </script>
+    </body>
+</html>

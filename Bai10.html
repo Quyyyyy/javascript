@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bai 10 javascript</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            // Objects trong javascript
+
+            var person = {
+                firstName: "Tran",
+                lastName: "Minh",
+                age: 22,
+                gender: "Male",
+                address: "Ha Dong",
+
+                smile: function(){
+                    return "Hahaha....";
+                },
+                goToSchool: function(){
+                    return "By bus";
+                },
+                eatBreakfirst: function(){
+                    return "Very Quickly!";
+                },
+                fullName: function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            person.firstName = "Hoang";
+            person.lastName = "Truong";
+            document.getElementById("demo").innerHTML = person.age;
+        </script>
+    </body>
+</html>
